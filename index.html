@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINKS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <link rel="shortcut icon" type="imagex/png" href="./assets/hamburguer.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- META TAG ORIGIN -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hamburguesas El Ronald - ¡La mejor hamburguesería!">
+    <meta property="og:image" content="assets/hamb-1.png">
+    <meta property="og:description" content="La mejor hamburguesas caseras.">
+    <meta property="og:site_name" content="DevBurger">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/output.css">
+    <title>Dev Burguer</title>
+  </head>
+  <body>
+    <!-- <h1 class="text-5xl">Primeiro Projeto</h1> -->
+    <!-- Usar comentários para estudar e anotar cada parte do código -->
+    <!-- Início do Header -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <img src="./assets/hamb-1.png" alt="Logo DevBurger" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Hamburguesas "El Ronald"</h1>
+        <span class="text-white font-medium">Mexicali, Baja California</span>
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-4" id="date-span">
+          <span class="text-white font-medium">Lunes a Domingo - 10:00 a 22:00</span>
+        </div>
+      </div>
+    </header>
+    <!-- Final del Encabezado -->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6"> Conoce nuestro menú </h2>
+    <!-- Inicio del Menú -->
+    <div id="menu">
+      <!-- Principal: grid de elementos dentro, en esta página, serán los elementos de los productos. Un grid de dos productos uno al lado del otro, uno con otro debajo, ese tipo de cosas -->
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+        <!-- Inicio del Ítem de Producto -->
+        <!-- Imagen del Producto -->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-1.png" alt="Hamburguesa smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+          <!-- Título del Producto -->
+          <div>
+            <p class="font-bold">Hamburguesa Smash</p>
+            <p class="text-sm">Pan ligero de fermentación natural de trigo, hamburguesa 160g, queso prato y mayonesa al estilo de la casa.</p>
+            <!-- Precio y Botón -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$18.90</p>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguesa Smash" data-price="18.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Ítem de Producto -->
+        <!-- Inicio del Ítem de Producto -->
+        <!-- Imagen del Producto -->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-2.png" alt="Hamburguesa doble" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+          <!-- Título del Producto -->
+          <div>
+            <p class="font-bold">Hamburguesa Doble</p>
+            <p class="text-sm">Pan ligero de fermentación natural de trigo, hamburguesa 160g, queso prato y mayonesa al estilo de la casa.</p>
+            <!-- Precio y Botón -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$32.90</p>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguesa Doble" data-price="32.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Ítem de Producto -->
+        <!-- Inicio del Ítem de Producto -->
+        <!-- Imagen del Producto -->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-3.png" alt="Hamburguesa salad" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+          <!-- Título del Producto -->
+          <div>
+            <p class="font-bold">Hamburguesa Salad</p>
+            <p class="text-sm">Pan ligero de fermentación natural de trigo, hamburguesa 160g, queso prato y mayonesa al estilo de la casa.</p>
+            <!-- Precio y Botón -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$35.90</p>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguesa Salad" data-price="35.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Ítem de Producto -->
+        <!-- Inicio del Ítem de Producto -->
+        <!-- Imagen del Producto -->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-4.png" alt="Hamburguesa de la casa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+          <!-- Título del Producto -->
+          <div>
+            <p class="font-bold">Hamburguesa de la Casa</p>
+            <p class="text-sm">Pan ligero de fermentación natural de trigo, hamburguesa 160g, queso prato y mayonesa al estilo de la casa.</p>
+            <!-- Precio y Botón -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$30.00</p>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguesa de la Casa" data-price="30.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Ítem de Producto -->
+        <!-- Inicio del Ítem de Producto -->
+        <!-- Imagen del Producto -->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-5.png" alt="Hamburguesa 4 quesos" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+          <!-- Título del Producto -->
+          <div>
+            <p class="font-bold">Hamburguesa 4 Quesos</p>
+            <p class="text-sm">Pan ligero de fermentación natural de trigo, hamburguesa 160g, queso prato y mayonesa al estilo de la casa.</p>
+            <!-- Precio y Botón -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$33.50</p>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguesa 4 Quesos" data-price="33.50">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Ítem de Producto -->
+        <!-- Inicio del Ítem de Producto -->
+        <!-- Imagen del Producto -->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-6.png" alt="Hamburguesa Especial con Papas Fritas" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+          <!-- Título del Producto -->
+          <div>
+            <p class="font-bold">Hamburguesa Especial con Papas Fritas</p>
+            <p class="text-sm">Pan ligero de fermentación natural de trigo, hamburguesa 160g, queso prato y mayonesa al estilo de la casa.</p>
+            <!-- Precio y Botón -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$45.90</p>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguesa Especial con Papas Fritas" data-price="45.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Ítem de Producto -->
+        <!-- Inicio del Ítem de Producto -->
+        <!-- Imagen del Producto -->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-7.png" alt="Hamburguesa Chicken Nuggets" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+          <!-- Título del Producto -->
+          <div>
+            <p class="font-bold">Hamburguesa Chicken Nuggets</p>
+            <p class="text-sm">Pan ligero de fermentación natural de trigo, hamburguesa 160g, queso prato y mayonesa al estilo de la casa.</p>
+            <!-- Precio y Botón -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$29.80</p>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguesa Chicken Nuggets" data-price="29.80">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Ítem de Producto -->
+        <!-- Inicio del Ítem de Producto -->
+        <!-- Imagen del Producto -->
+        <div class="flex gap-2">
+          <img src="./assets/hamb-8.png" alt="Hamburguesa Vegana" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+          <!-- Título del Producto -->
+          <div>
+            <p class="font-bold">Hamburguesa Vegana</p>
+            <p class="text-sm">Pan ligero de fermentación natural de trigo, hamburguesa 160g, queso prato y mayonesa al estilo de la casa.</p>
+            <!-- Precio y Botón -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$31.40</p>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguesa Vegana" data-price="31.40">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Ítem de Producto -->
+      </main>
+      <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl">Bebidas</h2>
+      </div>
+      <!-- Inicio del Grid de Bebidas -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+        <!-- Inicio del Ítem de Bebida -->
+        <!-- Imagen del Producto -->
+        <div class="flex gap-2 w-full">
+          <img src="./assets/refri-1.png" alt="Coca-cola lata" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+          <!-- Título del Producto -->
+          <div class="w-full">
+            <p class="font-bold">Coca-cola Lata</p>
+            <!-- <p class="text-sm">Pan ligero de fermentación natural de trigo, hamburguesa 160g, queso prato y mayonesa al estilo de la casa.</p> -->
+            <!-- Precio y Botón -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$20.00</p>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca lata" data-price="20">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Ítem de Bebida -->
+        <!-- Inicio del Ítem de Bebida -->
+        <!-- Imagen del Producto -->
+        <div class="flex gap-2 w-full">
+          <img src="./assets/pepsi.png" alt="Pepsi Lata" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+          <!-- Título del Producto -->
+          <div class="w-full">
+            <p class="font-bold">Pepsi Lata</p>
+            <!-- <p class="text-sm">Pan ligero de fermentación natural de trigo, hamburguesa 160g, queso prato y mayonesa al estilo de la casa.</p> -->
+            <!-- Precio y Botón -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$25.00</p>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana lata" data-price="25">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Ítem de Bebida -->
+      </div>
+      <!-- Fin del Grid de Bebidas -->
+    </div>
+    <!-- Fim do Menu -->
+    <!-- Inicio del Pie de Página -->
+    <!-- Modal de Carrito -->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Tu carrito</h2>
+        <!-- Ítems del Carrito -->
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+        <p class="font-bold">Total: <span id="cart-total">0.00</span>
+        </p>
+        <p class="font-bold mt-4">Dirección de entrega:</p>
+        <input type="text" placeholder="Ingresa tu dirección completa..." id="address" class="w-full border-2 p-1 rounded my-1" />
+        <p class="text-red-500 hidden" id="address-warn">¡Ingresa tu dirección completa!</p>
+        <div class="flex items-center justify-between mt-5 w-full">
+          <button id="close-modal-btn">Cerrar</button>
+          <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+        </div>
+      </div>
+    </div>
+    <!-- Fin del Modal de Carrito -->
+    <!-- Botón de Carrito en el Pie de Página -->
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+      <button class="flex items-center gap-2 text-white font-bold" id="cart-btn"> ( <span id="cart-count">0</span>) Ver mi carrito <i class="fa fa-cart-plus text-lg text-white"></i>
+      </button>
+    </footer>
+    <!-- Fin del Botón de Carrito en el Pie de Página -->
+    <!-- Fin del Pie de Página -->```
+    <!-- Script JS y Toastify JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
