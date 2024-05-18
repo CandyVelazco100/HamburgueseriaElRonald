@@ -2,7 +2,7 @@
 
    <h1>Menú en línea</h1>
 
-   <p><a href="https://cardapio-gules.vercel.app/">Enlace al proyecto</a></p>
+   <p><a href="https:/hamburgueseria-el-ronald.vercel.app/">Enlace al proyecto</a></p>
 
    <p>Proyecto completo desde cero utilizando HTML, CSS, Tailwind CSS y JavaScript. Con técnicas esenciales de desarrollo web, se creó una aplicación dinámica y receptiva de este proyecto completo.</p>
 
