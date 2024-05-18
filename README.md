@@ -6,8 +6,6 @@
 
    <p>Proyecto completo desde cero utilizando HTML, CSS, Tailwind CSS y JavaScript. Con técnicas esenciales de desarrollo web, se creó una aplicación dinámica y receptiva de este proyecto completo.</p>
 
-   <img src="template/Home.png" alt="Diseño de la página" />
-
    <br>
 
    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
