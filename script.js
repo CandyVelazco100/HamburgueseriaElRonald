@@ -170,7 +170,6 @@ function removeItemCart(name) {
 addressInput.addEventListener("input", function(event) {
    let inputValue = event.target.value;
 
-   // Quando clicar no botão 'Finalizar pedido', verificar se o input do endereço está vazio ou não. Se estiver vazio, mostrar o aviso.
    if (inputValue !== "") {
       addressInput.classList.remove("border-red-500");
       addressWarn.classList.add("hidden");
@@ -181,10 +180,9 @@ addressInput.addEventListener("input", function(event) {
 checkoutBtn.addEventListener("click", function() {
    const isOpen = checkRestauranteOpen();
    if (!isOpen) {
-      // alert("Restaurante fechado no momento! Volte novamente no horário de atendimento.")
 
       Toastify({
-         text: "Ops, o restaurante está fechado no momento! Volte novamente no horário de atendimento :)",
+         text: "Oops, ¡el restaurante está cerrado en este momento! Vuelva en horario de apertura :)",
          duration: 3000,
          // destination: "https://github.com/apvarun/toastify-js",
          // newWindow: true,
@@ -210,7 +208,6 @@ checkoutBtn.addEventListener("click", function() {
       return;
    }
 
-   // Enviar o pedido do carrinho para o API WhatsApp
    // console.log(cart)
 
    const cartItems = cart.map((item) => {
@@ -224,7 +221,7 @@ checkoutBtn.addEventListener("click", function() {
    const message = encodeURIComponent(cartItems)
    const phone = "526863405845"
 
-   // API do WhatsApp
+   // API de WhatsApp
 
    window.open(`https://wa.me/${phone}?text=${message} Direccion: ${addressInput.value}`, "_blank")
 
@@ -249,8 +246,6 @@ checkoutBtn.addEventListener("click", function() {
    updateCartModal();
 })
 
-// Validar se o restaurante está aberto
-// Algoritmo para verificar a hora e manipular o card pelo horário
 function checkRestauranteOpen() {
    const data = new Date();
    const hora = data.getHours();
